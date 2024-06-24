@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+.header-container{
+    background-color: antiquewhite;
+    border: 1px solid;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /*Make sure it is above the rest of the content*/
+}
+
