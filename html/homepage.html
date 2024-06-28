@@ -6,33 +6,88 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <link rel="stylesheet" href="furnival-design.css">
+        <link rel="stylesheet" href="media.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <title>Furnival Design</title>
     </head>
 
     <body>
-        <div class="header-container">
-            <nav>
-                <ul>
-                    <li style="justify-content: flex-start;"><img src="furnival.png" width = 90 height = 75></li>
-                    <li class="nav-link"><a href="homepage.html">Home</a></li>
-                    <li class="nav-link"><a href="previous-work.html">Previous Work</a></li>
-                    <li class="nav-link"><a href="about.html">About Furnival Design</a></li>
-                    <li class="nav-link"><a href="contact.html">Contact</a></li>
-                    <li class = "nav-link"><a href="https://furnivalpress.co.uk">Furnival Press</a></li>
+        <nav id="nav-desktop">
+            <div class="logo">
+                furnival design.
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li><a href = "contact.html">Contact.</a></li>
+                    <li><a href = "previous-work.html">Previous work.</a></li>
+                    <li><a href = "about.html">About</a>.</li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
+
+        <nav id="mobile-nav">
+            <div class="logo">
+                Furnival Design
+            </div>
+            <div class = "mobile-menu">
+                <div class="mobile-nav-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+                <div class="mobile-menu-links">
+                    <li><a href = "contact.html" onclick="toggleMenu()">Contact.</a></li>
+                    <li><a href = "previous-work.html" onclick="toggleMenu()">Previous work.</a></li>
+                    <li><a href = "about.html" onclick="toggleMenu()">About</a>.</li>
+                </div>
+               
+            </div>
+        </nav>
+
+        <section id = "profile">
+            <div class="section-pic-container">
+                <img src="day_out.jpg" alt="Furnival Press Day Out">
+            </div>
+
+            <div class = "section-text">
+                <p class = "section-text-p1">
+                    Hello 
+                </p>
+                <h1 class = "title">
+                    Jude Peach
+                </h1>
+                <p class="section-text-p2">
+                    Full stack developer
+                </p>
+
+                <div class = "button-container">
+                    <button class = "btn btn-color-2" onclick="window.open('put cv here')">
+                        Download Cv
+                    </button>
+                    <button class = "btn btn-color-1" onclick="location.href='contact.html'">
+                        Contact
+                    </button>
+                </div>
+
+                <div id="socials-container">
+                    <img src="linkedin.png" alt="Linked In" class="icon" onclick="location.href = 'https://uk.linkedin.com/in/jude-peach-18014622b'">
+                    <img src="github.png" alt="Linked In" class="icon" onclick="location.href = 'https://github.com/JudePeach'">
+                </div>
+            </div>
+        </section>
+        <script type = "text/javascript" src="furnival-scripts.js"></script>
+    
 
 
-        <div class="content">
+        <!--<div class="content">
             <h1><b>Get To Know Us: </b></h1>
             <p>At Furnival Designs, we specialize in creating bespoke web solutions for creatives alike.<br>
                 Our expertise in search engine optimization (SEO) ensures your website not only looks visually stunning,<br>
                 but also competes well in search engines against other similar sites,<br>
                 driving meaningful traffic to your site.</p>
-            <img src="day_out.jpg" width = 600, height="450" class = "day-out">
-            <img src="old-furnival-pic.jpeg" width = 400 height = 250 class = "day-out">
+            <img src="day_out.jpg" width = 400, height="275" class = "day-out">
+            <img src="old-furnival-pic.jpeg" width = 400 height = 250 class = "factory-pic">
             <h1><b>Services we offer:</b></h1>
             <ul>
                 <li><b>Bespoke Web Development</b></li>
@@ -41,16 +96,13 @@
                 <li><b>Maintenance and Support</b></li>
             </ul>
             <h1>A Word From Us To You</h1>
-            <p>"Wether your a start up or a well established brand we hope to digitise your vision. Explore our portfolio and contact us today to discuss things further."<br>  <i>Jude Peach</i></p>
+            <p style="padding-bottom:10px ">"Wether your a start up or a well established brand we hope to digitise your vision. <br>Explore our portfolio and contact us today to discuss things further."<br>  <i>Jude Peach</i></p>
+
+        </div>-->
 
 
-        </div>
 
 
 
-
-        <footer>
-            <p><b>Contact:</b> tel(+44): 7932505174 - Email: <i>judepeach@icloud.com</i></p>
-        </footer>
     </body>
 </html>
