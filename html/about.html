@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="furnival-design.css">
         <link rel="stylesheet" href="media.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -44,27 +45,17 @@
                
             </div>
         </nav>
-        <section id="testimonials">
-            <div class="testimonial-item">
-                <img src="Asset-53.svg" alt="Reviewer 1" width = 100px>
-                <p>"Furnival Press did an absolutely fantastic job in producing a booklet for my 50th school reunion.<br> Communication with David Peach was excellent from start to finish.<br> David kept me up to speed with production,layout, costing, options on paper, binding etc.<br> The outstanding and brilliant finished product is a testament to the high quality of service and professionalism<br> that Furnival Press and David Peach provide"</p>
-                <p class="author">- Tom Bradley</p>
-            </div>
-            <div class="testimonial-item-upper">
-                <img src="Asset-54.svg" alt="Reviewer 2" width = 110px>
-                <p>"I have used Furnival Press for my business printing for over 40 years.<br> They provide excellent quality and service and are always ready to help out in the crisis.<br> I cannot recommend them highly enough."</p>
-                <p class="author">- Amanda Jackson</p>
-            </div>
-            <div class="testimonial-item">
-                <img src="Asset-55.svg" alt="Reviewer 3" width = 100px>
-                <p>"Furnival Press have fulfilled a number of excellent orders for me.<br> David and Johnny have decades of experience and are always more than happy to <br>converse at length on how best to use their many tools to get me the results I'm after.<br>
-
-                    I've had bad experiences with online printing services. Since using these guys I won't be looking back."</p>
-                <p class="author">- Jaiden Maxwell</p>
-            </div>
-        </section>
+        
         <section id = "profile">
-            
+            <div class = "content-container">
+
+                <div id = "history-container" class = "content-history">
+
+                </div>
+                <div id="story-container" class = "content">
+                    
+                </div>
+            </div>
 
             <div class = "section-text">
                 <h1 class = "title">
@@ -73,6 +64,9 @@
                 <p class="section-text-p2">
                     All things design since 1862.
                 </p>
+                <div class = "section-pic-container">
+                <img src = "../assets/day_out.jpg">
+                </div>
 
                 <div class = "button-container">
                     <button class = "btn btn-color-2" id = "historyButton" onclick="showHistory()">
@@ -82,17 +76,29 @@
                         Our Story
                     </button>
                 </div>
-                <div class = "content-container">
-
-                    <div id = "history-container" class = "content-history">
-
-                    </div>
-                    <div id="story-container" class = "content">
-                        
-                    </div>
-                </div>
+                
             </div>
         </section>
+
+        <!--<section id = "testimonials">
+            <div class = "testimonials-container">
+                <div class = "testimonial-item">
+                    <p class = "section-text-p1">
+                        I have used Furnival Press for my business printing for over 40 years.<br> They provide excellent quality and service and are always ready to help out in the crisis. I cannot recommend them highly enough
+                    </p>
+                </div>
+                <div class = "testimonial-item">
+                    <p class = "section-text-p1">
+                    Testimonial 2
+                    </p>
+                </div>
+                <div class = "testimonial-item">
+                    <p class = "section-text-p1">
+                    Testimonial 3
+                    </p>
+                </div>
+            </div>
+        </section>>-->
         <script type = "text/javascript" src="furnival-scripts.js"></script>
     </body>
 </html>
